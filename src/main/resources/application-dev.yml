@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(n9kQmM4Ygnmoe3P7VT99BiHskAeOjlDP9RbUIKfaKUwW/oLwONWSFnEA2nIvZRW1tyHYs9jwbNyTckPBH9HVQdxILrmYTqjs)
+    username: ENC(uYRv8JQEGwgnFco7VthzM5jm8cgA5XAr)
+    password: ENC(/9V/0VA2nP5NTZbgJoOGZw==)
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        physical_naming_strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+        default_batch_fetch_size: 500
+    database: mysql
